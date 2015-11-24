@@ -1,0 +1,22 @@
+.box {
+	height: 300px;
+	width: 300px;
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 300px;
+	font-size: 1000%;
+}
+
+.box.played {
+	background-color: #ccc;
+}
+
+.box:hover {
+	background-color: pink;
+}
+
+.grid {
+	width: 950px;
+}
