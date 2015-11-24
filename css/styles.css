@@ -10,13 +10,14 @@
 }
 
 .box.played {
-	background-color: #ccc;
+	background-color: blue;
 }
 
 .box:hover {
-	background-color: pink;
+	background-color: red;
 }
 
 .grid {
 	width: 950px;
+	vertical-align: middle;
 }
