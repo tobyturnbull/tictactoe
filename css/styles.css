@@ -1,34 +1,38 @@
-/*body {
-    background-image: url("paper.gif");
-    background-color: #cccccc;
+body {
+    background-image: url(../images/abs.jpg);
 }
-*/
+
 .box {
 	height: 200px;
 	width: 200px;
-	border: 1px solid black;
+	border: 3px solid black;
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
 	line-height: 200px;
 	font-size: 1000%;
 	font-family: Impact;
+	color: white;
 }
 
 .box.played {
-	background-color: blue;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .box:hover {
-	background-color: red;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .grid {
-	width: 614px;
+	width: 620px;
 	vertical-align: middle;
 	cell-spacing: 0px;
 }
 
 body{
-	margin-left: 265px;	
+	margin-left: 300px;	
+}
+
+container{
+	f
 }
