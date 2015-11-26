@@ -25,14 +25,31 @@ body {
 
 .grid {
 	width: 620px;
+	margin: 0 auto;
 	vertical-align: middle;
-	cell-spacing: 0px;
+/*	margin-top: 600px;*/
 }
 
-body{
-	margin-left: 300px;	
+body {
+	margin: auto 0;
 }
 
-container{
-	f
+@media screen and (max-width:1000px) {
+    body {
+        font-family: Arial;
+
+    }
+
+    .grid {
+    	/*width: 200px;*/
+    	margin-top: 500px;
+    }
+}
+
+.bubble {
+	position: absolute;
+	border: 1px solid lime;
+	width: 2em;
+	height: 2em;
+	border-radius: 100%;
 }
