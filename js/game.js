@@ -1,8 +1,13 @@
 $(document).ready(function () {
-
-	var player1 = $("#player-1-inp").val();
-    var player2 = $("#player-2-inp").val();
 	var currentPiece = "O";
+	var resetGame = function () {
+	$(".box").html("");
+	$(".box").css("background-color", " ");
+	$(".box").removeClass('played');
+	};
+
+	$("#reset").on('click', resetGame)
+
 	var placePiece = function () {
 		if ($(this).hasClass('played')) {
 			return;
@@ -26,8 +31,10 @@ $(document).ready(function () {
 			($('.box.1a, .box.2a, .box.3a').text() === 'OOO') ||
 			($('.box.1b, .box.2b, .box.3b').text() === 'OOO') ||
 			($('.box.1c, .box.2b, .box.3a').text() === 'OOO') ||
-			($('.box.1a, .box.2b, .box.3c').text() === 'OOO'))
-			alert("Player 1 Wins");
+			($('.box.1a, .box.2b, .box.3c').text() === 'OOO')){
+			resetGame();
+			alert("YOU'RE WINNER");
+		}
 
 		else if
 			(($('.box.1a, .box.1b, .box.1c').text() === 'XXX') ||
@@ -36,15 +43,15 @@ $(document).ready(function () {
 			($('.box.1a, .box.2a, .box.3a').text() === 'XXX') ||
 			($('.box.1b, .box.2b, .box.3b').text() === 'XXX') ||
 			($('.box.1c, .box.2b, .box.3a').text() === 'XXX') ||
-			($('.box.1a, .box.2b, .box.3c').text() === 'XXX'))
-			alert("Player 2 Wins");
+			($('.box.1a, .box.2b, .box.3c').text() === 'XXX')){
+			resetGame();
+			alert("Oi nah u suck at this game lol");
+		}
 		else
 			console.log('lmao')
 		}
 
 	$(".box").on("click", placePiece);
-
-
 
 });
 

@@ -1,3 +1,8 @@
+/*body {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+}
+*/
 .box {
 	height: 200px;
 	width: 200px;
@@ -21,6 +26,7 @@
 .grid {
 	width: 614px;
 	vertical-align: middle;
+	cell-spacing: 0px;
 }
 
 body{
