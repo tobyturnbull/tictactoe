@@ -84,7 +84,7 @@ $(document).ready(function () {
 	$(".box").on("touch", placePiece);
 	$(".currentPiece").addClass('animated bounceInLeft');
 	$('.box').addClass('animated rollIn');
-	$(".body").on('touchmove', bubble);
+	$("body").on('touchmove', bubble);
 
 });
 
