@@ -54,37 +54,15 @@ $(document).ready(function () {
 			}
 		}
 
-	var bubble = function (event) {
-		console.log(event.clientX, event.clientY);
-	
-		var $b = $('<div/>').addClass('bubble');
-		
-		var size = Math.random() * 4;
-
-		$b.css({
-			width: size + 'em',
-			height: size + 'em',
-			left: event.clientX,
-			top: event.clientY
-		});
-		$('body').append($b);
-
-		//Clean up after ourselves.
-		setTimeout(function() {;
-			$b.animate({
-				top: -1000
-			}, 2000, function (){
-				$b.remove();
-			});
-	
-		}, 1400);
-	};
 
 	$(".box").on("click", placePiece);
 	$(".box").on("touch", placePiece);
 	$(".currentPiece").addClass('animated bounceInLeft');
 	$('.box').addClass('animated rollIn');
-	$("body").on('touchmove', bubble);
+	$("body").on('touch', bubble);
+	$("body").on('tap', bubble);
+	$("body").on('swipe', bubble);
+	$("body").on('mousemove', bubble);
 
 });
 

@@ -45,11 +45,3 @@ body {
     	margin-top: 500px;
     }
 }
-
-.bubble {
-	position: absolute;
-	border: 1px solid lime;
-	width: 2em;
-	height: 2em;
-	border-radius: 100%;
-}
