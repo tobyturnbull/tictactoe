@@ -59,10 +59,6 @@ $(document).ready(function () {
 	$(".box").on("touch", placePiece);
 	$(".currentPiece").addClass('animated bounceInLeft');
 	$('.box').addClass('animated rollIn');
-	$("body").on('touch', bubble);
-	$("body").on('tap', bubble);
-	$("body").on('swipe', bubble);
-	$("body").on('mousemove', bubble);
 
 });
 
